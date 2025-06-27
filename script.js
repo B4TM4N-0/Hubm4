@@ -45,3 +45,5 @@ copyBtn.addEventListener('click', () => {
 
 addHub("GodMode", "player.Character.Humanoid.MaxHealth = math.huge", "key", "images/god.jpg");
 addHub("SpeedHack", "player.Character.Humanoid.WalkSpeed = 100", "universal", "images/speed.jpg");
+addHub("BRO WHAT", "player.Character.Humanoid.MaxHealth = math.huge", "key", "images/god.jpg");
+addHub("HAHAHHAAH.", "player.Character.Humanoid.WalkSpeed = 100", "universal", "images/speed.jpg");
