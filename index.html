@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Script Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-  Hello world
+
+  <!-- 🔥 Site Title & Links -->
+  <div class="site-header">
+    <h1 class="site-title">M4 Script Hub</h1>
+    <div class="site-links">
+      <a href="https://discord.gg/M2wDftnfkR" target="_blank">
+        <i class="fab fa-discord"></i> Discord
+      </a>
+      <a href="https://youtube.com/@M4rkk3" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+    </div>
+  </div>
+
+  <!-- Card 1 -->
+  <div class="card" data-script="print('Script 1!')">
+    <div class="card-title">Script 1</div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card" data-script="print('Script 2!')">
+    <div class="card-title">Script 2</div>
+  </div>
+
+  <!-- Global Popup -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <div class="popup-title" id="popupTitle">Script Title</div>
+      <div class="popup-buttons">
+        <button id="copyBtn">Copy</button>
+        <button disabled>Soon</button>
+      </div>
+      <button class="popup-close" id="popupClose">×</button>
+    </div>
+  </div>
+
+  <script src="src/element.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
