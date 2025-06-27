@@ -22,15 +22,18 @@
     </div>
   </div>
 
-  <!-- Card 1 -->
-  <div class="card" data-script="print('Script 1!')">
-    <div class="card-title">Script 1</div>
+  <!-- Static Cards -->
+  <div class="hub-container">
+    <div class="card" data-script="print('Script 1!')">
+      <div class="card-title">Script 1</div>
+    </div>
+
+    <div class="card" data-script="print('Script 2!')">
+      <div class="card-title">Script 2</div>
+    </div>
   </div>
 
-  <!-- Card 2 -->
-  <div class="card" data-script="print('Script 2!')">
-    <div class="card-title">Script 2</div>
-  </div>
+  <!-- 🔁 Dynamic Cards will be added to hub-container from JS -->
 
   <!-- Global Popup -->
   <div class="popup-overlay" id="popupOverlay">
@@ -44,6 +47,7 @@
     </div>
   </div>
 
+  <!-- Scripts -->
   <script src="src/element.js"></script>
   <script src="script.js"></script>
 </body>
