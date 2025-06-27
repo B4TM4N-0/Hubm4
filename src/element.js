@@ -1,4 +1,7 @@
 function addHub(title, scriptCode, badgeType = "universal", bgImage = null) {
+  const container = document.querySelector('.hub-container');
+  if (!container) return console.error("Hub container not found.");
+
   const card = document.createElement('div');
   card.className = 'card';
   card.setAttribute('data-script', scriptCode);
@@ -18,13 +21,20 @@ function addHub(title, scriptCode, badgeType = "universal", bgImage = null) {
   // Badge
   const badge = document.createElement('div');
   badge.className = 'card-badge';
-  badge.textContent = badgeType.toLowerCase() === "key" ? "Key System" : "Universal";
-  badge.classList.add(badgeType.toLowerCase() === "key" ? "badge-key" : "badge-universal");
 
-  // Append
+  if (badgeType.toLowerCase() === "key") {
+    badge.textContent = "Key System";
+    badge.classList.add("badge-key");
+  } else {
+    badge.textContent = "Universal";
+    badge.classList.add("badge-universal");
+  }
+
+  // Assemble card
   card.appendChild(cardTitle);
   card.appendChild(badge);
-  document.body.appendChild(card);
+  container.appendChild(card);
 
+  // Setup popup
   setupCardPopup(card); // from script.js
 }
